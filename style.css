@@ -1,0 +1,108 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+ul{list-style-type: none;}
+a{text-decoration: none;}
+body{
+    background-color: #f8f8f8;
+}
+.up, .down{
+    color: gray;
+    font-size: 2.5em;
+    cursor: pointer;
+}
+.up{
+    position: absolute;
+    top: 11.3%;
+    left: 50%;
+    transform: translateX(-50%)
+}
+.down{
+    position: absolute;
+    bottom: 12%;   
+    left: 50%;
+    transform: translateX(-50%)
+}
+.logo{
+    position: absolute;
+    top: 3%;
+    right: 8%;
+    height: 20%;
+}
+.main .page{
+    width: 50%;
+    height: 40%;
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    transition: 0.8s;
+    overflow: hidden;
+    background-size: cover;
+    background-position-y: 60%;
+    background-position-x: 30px;
+    background-repeat: no-repeat;
+    opacity: 0;
+}
+.main .page a{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    font-size: 1.5em;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    padding: 1%;
+    transition: 0.8s;
+}
+.main .upper a{
+    top:0px;
+}
+.main .upper2 a{
+    top:0px;
+}
+.main .current{
+    z-index: 100;
+    background-color: rgb(99, 98, 98);
+    opacity: 1;
+}
+.main .upper{
+    z-index: 90;
+    background-color: rgb(172, 172, 172);
+    transform: scale(0.9);
+    top: 23%;
+    opacity: 0.8;
+}
+.main .upper2{
+    z-index: 80;
+    background-color: rgb(206, 206, 206);
+    transform: scale(0.8);
+    top: 16%;
+    opacity: 0.6;
+}
+.main .lower{
+    z-index: 91;
+    background-color: rgb(172, 172, 172);
+    transform: scale(0.9);
+    top: 37%;
+    opacity: 0.8;    
+}
+.main .lower2{
+    z-index: 81;
+    background-color: rgb(206, 206, 206);
+    transform: scale(0.8);
+    top: 44%;
+    opacity: 0.6;
+}
+@media screen and (max-width: 800px) {
+    .main .page{
+        width: 96%;
+        height: 30%;
+        top: 35%;
+        left: 2%;
+    }
+    .main .upper{top: 29%}
+    .main .upper2{top: 23%}
+    .main .lower{top: 41%}
+    .main .lower2{top: 47%}
+    .logo{height:15%}
+    .up, .down{font-size: 2em}
+    .up{top: 19.3%}
+    .down{bottom: 20%}
+}
